@@ -34,9 +34,15 @@ jobs:
           knitr::purl("index.Rmd", "script.R")
           zip("data_and_script.zip", c("data", "script.R"))
         shell: Rscript {0}
-        
+      
+      - name: Make public directory
+        run: |-
+          mkdir public
+          cp -R * public/
+          
+          
       - name: Deploy workshop 
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.DEPLOY_TOKEN }}
-          
+          publish_dir: ./public
