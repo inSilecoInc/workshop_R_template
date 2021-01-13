@@ -37,8 +37,7 @@ jobs:
       
       - name: Make public directory
         run: |-
-          mkdir public
-          cp -R * public/
+          rsync -rR ./ public/ 
           
           
       - name: Deploy workshop 
