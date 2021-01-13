@@ -38,6 +38,7 @@ jobs:
       - name: Make public directory
         run: |-
           rsync -rR ./ public/ 
+          tree public/
           
       - name: Deploy workshop 
         uses: peaceiris/actions-gh-pages@v3
