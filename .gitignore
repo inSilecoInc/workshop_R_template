@@ -1,3 +1,13 @@
+# Workshop-specific files 
+
+index.html
+index.pdf
+assets/
+index_files/
+index_cache/
+script.R
+
+
 # History files
 .Rhistory
 .Rapp.history
