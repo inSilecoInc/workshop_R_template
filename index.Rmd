@@ -115,8 +115,7 @@ plot(1,1)
 ```
 
 
-
---- 
+---
 # Exercice 
 
 ### Description
@@ -137,8 +136,8 @@ countdown::countdown(minutes = 15, seconds = 0)
 ---
 # Last slides
 
-About inSileco
+## About inSileco
 
 --
 
-About us
+## About us
