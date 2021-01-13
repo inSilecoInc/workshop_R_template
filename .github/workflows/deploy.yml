@@ -16,7 +16,7 @@ jobs:
         run: |-
           sudo apt-get update
           sudo apt-get install -y pandoc libudunits2-0 libudunits2-dev
-          sudo apt-get install -y chromium-browser libproj-dev libgeos-dev
+          sudo apt-get install -y rsync libproj-dev libgeos-dev
           sudo apt-get install -y libgdal-dev r-cran-ncdf4 r-cran-remotes r-cran-sf
       
       - name: Install R packages 
@@ -38,7 +38,6 @@ jobs:
       - name: Make public directory
         run: |-
           rsync -rR ./ public/ 
-          
           
       - name: Deploy workshop 
         uses: peaceiris/actions-gh-pages@v3
