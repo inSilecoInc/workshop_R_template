@@ -28,6 +28,7 @@ knitr::opts_chunk$set(
   fig.align = 'center',
   width = 120
 )
+library(countdown)
 rfa <- function(...) icon::fontawesome(...)
 ```
 
@@ -56,9 +57,10 @@ class: title-slide, middle
 <br>
 <img src="img/logoW.png" width="140px"></img>
 
+<!-- Modify accordingly -->
 ![deploy workshop](https://github.com/inSilecoInc/workshop_raster/workflows/deploy%20workshop/badge.svg)
 
-.instructors[Content under [`r rfa("creative-commons")` `r rfa("creative-commons-by")`](https://creativecommons.org/licenses/by/4.0/) unless otherwise specified]
+.instructors[Content under [`r rfa("creative-commons")` `r rfa("creative-commons-by")`](https://creativecommons.org/licenses/by/4.0/) unless otherwise specified.]
 
 
 
@@ -103,7 +105,7 @@ class: inverse, center, middle
 
 ???
 
-If after the workshop what follows makes sense and you feel it is kind of true, it would a success. 
+With the 3 ? you can add useful comments.
 
 
 
@@ -120,9 +122,8 @@ plot(1,1)
 
 ### Description
 
-```{r, echo = FALSE, purl = FALSE}
-countdown::countdown(minutes = 15, seconds = 0)
-```
+`r countdown(minutes = 15, seconds = 0)`
+
 
 
 ---

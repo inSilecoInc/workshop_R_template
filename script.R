@@ -11,6 +11,7 @@ knitr::opts_chunk$set(
   fig.align = 'center',
   width = 120
 )
+library(countdown)
 rfa <- function(...) icon::fontawesome(...)
 
 
