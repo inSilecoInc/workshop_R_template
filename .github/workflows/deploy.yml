@@ -34,8 +34,7 @@ jobs:
           knitr::purl("index.Rmd", "script.R")
           zip("data_and_script.zip", c("data", "script.R"))
         shell: Rscript {0}
-      
-          
+                
       - name: Deploy workshop 
         uses: peaceiris/actions-gh-pages@v3
         with:
