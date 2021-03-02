@@ -28,29 +28,35 @@ knitr::opts_chunk$set(
   fig.align = 'center',
   width = 120
 )
-library(countdown)
 options(htmltools.dir.version = FALSE, htmltools.preserve.raw = FALSE)
-rfa <- function(...) icon::fontawesome(...)
+library(countdown)
+rfa <- function(...) icons::fontawesome(...)
+emj <- function(...) emo::ji(...)
+kig <- function(...) knitr::include_graphics(...)
+gh <- function() rfa("github")
+rp <- function() rfa("r-project")
+ck <- function() rfa("clock")
+db <- function() rfa("database")
 ```
 
 
 class: title-slide, middle
 
 
-## .font200[`r icon::fontawesome("r-project")`asters]
+## .font200[`r rp()`eproducible]
 
 <br>
 
 .instructors[
-  .font180[Manipulate rasters with `r rfa("r-project")`]
+  .font180[Workshop with `r rp()`]
   <br><br><br>
   .authors140[David Beauchesne & Kevin Cazelles]
   <br><br>
   `r format(Sys.time(), '%B %d, %Y')`
   <br>
   .font200[
-  [`r rfa("github")`](https://github.com/inSilecoInc)
-  [`r rfa("database")`](link_to_data)
+  [`r gh()`](https://github.com/inSilecoInc)
+  [`r db()`](link_to_data)
   [`r rfa("file-pdf")`](link_to_pdf_version)
   ]
 ]
@@ -101,7 +107,7 @@ class: inverse, center, middle
 
 ![:custom_hr]()
 
-## Why (`r icon::fontawesome("clock")` ~ 15min)
+## Why (`r ck()` ~ 15min)
 
 
 ???
