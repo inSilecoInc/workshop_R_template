@@ -12,7 +12,7 @@ knitr::opts_chunk$set(
   width = 120
 )
 options(htmltools.dir.version = FALSE, htmltools.preserve.raw = FALSE)
-library(countdown)
+cdw <- function(...) countdown::countdown(...)
 rfa <- function(...) icons::fontawesome(...)
 emj <- function(...) emo::ji(...)
 kig <- function(...) knitr::include_graphics(...)
@@ -20,6 +20,9 @@ gh <- function() rfa("github")
 rp <- function() rfa("r-project")
 ck <- function() rfa("clock")
 db <- function() rfa("database")
+nf <- function() rfa("info-circle")
+lk <- function() rfa("link")
+bk <- function() rfa("book")
 
 
 ## ----plot1--------------------------------------------------------------------
