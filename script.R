@@ -11,9 +11,15 @@ knitr::opts_chunk$set(
   fig.align = 'center',
   width = 120
 )
-library(countdown)
 options(htmltools.dir.version = FALSE, htmltools.preserve.raw = FALSE)
-rfa <- function(...) icon::fontawesome(...)
+library(countdown)
+rfa <- function(...) icons::fontawesome(...)
+emj <- function(...) emo::ji(...)
+kig <- function(...) knitr::include_graphics(...)
+gh <- function() rfa("github")
+rp <- function() rfa("r-project")
+ck <- function() rfa("clock")
+db <- function() rfa("database")
 
 
 ## ----plot1--------------------------------------------------------------------
