@@ -1,30 +1,21 @@
 ## ----setup, include = FALSE---------------------------------------------------
-knitr::opts_chunk$set(
-  comment = "#>",
-  collapse = TRUE,
-  warning = FALSE,
-  message = FALSE,
-  dev = "png",
-  dpi = 108,
-  fig.width = 6,
-  fig.height = 4.5,
-  fig.align = 'center',
-  width = 120
+source("_setup.R")
+# knitr::clean_cache(TRUE)
+htmltools::tagList(
+  xaringanExtra::use_clipboard(
+    button_text = "<i class=\"fa fa-clipboard\"></i>",
+    success_text = "<i class=\"fa fa-check\" style=\"color: #37abc8\"></i>",
+  ),
+  rmarkdown::html_dependency_font_awesome()
 )
-options(htmltools.dir.version = FALSE, htmltools.preserve.raw = FALSE)
-cdw <- function(...) countdown::countdown(...)
-rfa <- function(...) icons::fontawesome(...)
-emj <- function(...) emo::ji(...)
-kig <- function(...) knitr::include_graphics(...)
-gh <- function() rfa("github")
-rp <- function() rfa("r-project")
-ck <- function() rfa("clock")
-db <- function() rfa("database")
-nf <- function() rfa("info-circle")
-lk <- function() rfa("link")
-bk <- function() rfa("book")
+xaringanExtra::use_scribble()
 
 
 ## ----plot1--------------------------------------------------------------------
 plot(1,1)
+
+
+## ---- child = "_last.Rmd"-----------------------------------------------------
+
+
 

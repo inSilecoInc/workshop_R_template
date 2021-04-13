@@ -1,7 +1,7 @@
 ---
 title: "Raster with R"
 author: "inSileco Team"
-date: 2021-03-02
+date: 2021-04-13
 output:
   xaringan::moon_reader:
     css: [default, rd.css, rd-font.css, "hygge"]
@@ -15,30 +15,16 @@ output:
 
 
 ```{r setup, include = FALSE}
-knitr::opts_chunk$set(
-  comment = "#>",
-  collapse = TRUE,
-  warning = FALSE,
-  message = FALSE,
-  dev = "png",
-  dpi = 108,
-  fig.width = 6,
-  fig.height = 4.5,
-  fig.align = 'center',
-  width = 120
+source("_setup.R")
+# knitr::clean_cache(TRUE)
+htmltools::tagList(
+  xaringanExtra::use_clipboard(
+    button_text = "<i class=\"fa fa-clipboard\"></i>",
+    success_text = "<i class=\"fa fa-check\" style=\"color: #37abc8\"></i>",
+  ),
+  rmarkdown::html_dependency_font_awesome()
 )
-options(htmltools.dir.version = FALSE, htmltools.preserve.raw = FALSE)
-cdw <- function(...) countdown::countdown(...)
-rfa <- function(...) icons::fontawesome(...)
-emj <- function(...) emo::ji(...)
-kig <- function(...) knitr::include_graphics(...)
-gh <- function() rfa("github")
-rp <- function() rfa("r-project")
-ck <- function() rfa("clock")
-db <- function() rfa("database")
-nf <- function() rfa("info-circle")
-lk <- function() rfa("link")
-bk <- function() rfa("book")
+xaringanExtra::use_scribble()
 ```
 
 
@@ -52,7 +38,7 @@ class: title-slide, middle
 .instructors[
   .font180[Workshop with `r rp()`]
   <br><br><br>
-  .authors140[David Beauchesne & Kevin Cazelles]
+  .authors140[David Beauchesne, Kevin Cazelles & Steve Vissault]
   <br><br>
   `r format(Sys.time(), '%B %d, %Y')`
   <br>
@@ -143,11 +129,7 @@ plot(1,1)
 - [Geocomputation with R](https://geocompr.robinlovelace.net/)
 
 
----
-# Last slides
 
-## About inSileco
 
---
-
-## About us
+```{R, child = "_last.Rmd"}
+```
