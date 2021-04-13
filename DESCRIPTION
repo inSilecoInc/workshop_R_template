@@ -5,14 +5,6 @@ Version: 0.0.0.9000
 Authors@R: c(
   person("inSileco Inc.", role = c("aut", "cre"), email = "kevin.cazelles@gmail.com")
   )
+Description: A template for our workshop presentations.
 Imports:
-  countdown,
-  emo,
-  icons,
-  rmarkdown,
-  xaringan
-Remotes: 
-  mitchelloharawild/icons,
-  gadenbuie/countdown,
-  hadley/emo
-
+  iseWorkshops
