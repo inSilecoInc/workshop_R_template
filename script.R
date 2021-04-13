@@ -11,6 +11,18 @@ htmltools::tagList(
 xaringanExtra::use_scribble()
 
 
+## ---- include = FALSE---------------------------------------------------------
+cool <- rfa(help = TRUE)
+
+
+## ---- echo = FALSE------------------------------------------------------------
+kableExtra::kbl(cool[1:9,], row.names = FALSE)
+
+
+## ---- echo = FALSE------------------------------------------------------------
+kableExtra::kbl(cool[10:17,], row.names = FALSE)
+
+
 ## ----plot1--------------------------------------------------------------------
 plot(1,1)
 

@@ -1,5 +1,5 @@
 ---
-title: "Raster with R"
+title: "Template R workshop"
 author: "inSileco Team"
 date: 2021-04-13
 output:
@@ -36,7 +36,7 @@ class: title-slide, middle
 <br>
 
 .instructors[
-  .font180[Workshop with `r rp()`]
+  .font180[`r rp()` Workshop]
   <br><br><br>
   .authors140[David Beauchesne, Kevin Cazelles & Steve Vissault]
   <br><br>
@@ -71,8 +71,8 @@ class: inverse, center, middle
 ## .font160[`r rfa("map")`  + `r rp()`]
 
 
----
 
+---
 # Learning objectives
 
 <br>
@@ -97,10 +97,31 @@ class: inverse, center, middle
 
 ## Why (`r ck()` ~ 15min)
 
-
 ???
 
 With the 3 ? you can add useful comments.
+
+
+---
+# Shortcuts
+
+```{r, include = FALSE}
+cool <- rfa(help = TRUE)
+```
+
+.pull-left[
+```{r, echo = FALSE}
+kableExtra::kbl(cool[1:9,], row.names = FALSE)
+```
+
+]
+
+.pull-right[
+```{r, echo = FALSE}
+kableExtra::kbl(cool[10:17,], row.names = FALSE)
+```
+]
+
 
 
 
@@ -116,6 +137,8 @@ plot(1,1)
 # Exercice 
 
 ### Description
+
+Use countdown with `cdw`
 
 `r cdw(minutes = 15, seconds = 0)`
 
