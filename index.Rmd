@@ -31,7 +31,7 @@ xaringanExtra::use_scribble()
 class: title-slide, middle
 
 
-## .font200[`r rp()`eproducible]
+## .font140[`r rp()`eproducible]
 
 <br>
 
@@ -113,7 +113,6 @@ cool <- rfa(help = TRUE)
 ```{r, echo = FALSE}
 kableExtra::kbl(cool[1:9,], row.names = FALSE)
 ```
-
 ]
 
 .pull-right[
