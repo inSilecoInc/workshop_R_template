@@ -11,6 +11,7 @@ Imports:
   iseWorkshops,
   kableExtra,
   htmltools,
+  pagedown,
   xaringan,
   xaringanExtra
 Remotes:
