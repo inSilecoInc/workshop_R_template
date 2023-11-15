@@ -4,9 +4,9 @@
 
 ## Installation 
 
-`iseWorkshops` must be installed. 
+`iseWorkshops` is required. 
 
 ```{R}
 install.packages("remotes")
-remotes::install_github("iseWorkshops")
+remotes::install_github("inSilecoInc/iseWorkshops")
 ```
