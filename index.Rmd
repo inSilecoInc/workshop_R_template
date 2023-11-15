@@ -45,7 +45,6 @@ class: title-slide, middle
   .font200[
   [`r gh()`](https://github.com/inSilecoInc)
   [`r db()`](link_to_data)
-  [`r rfa("file-pdf")`](link_to_pdf_version)
   ]
 ]
 
